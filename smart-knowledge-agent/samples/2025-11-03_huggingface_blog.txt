@@ -1,0 +1,24 @@
+🤗 Hugging Face Blog 最新 5 篇文章 (2025-11-03)
+
+### 1. NEW你也可以阅读这篇博客的中文版
+链接: https://huggingface.co/blog/zh
+摘要: 无摘要（请点击阅读全文）
+
+### 2. view all
+链接: https://huggingface.co/blog/community
+摘要: 无摘要（请点击阅读全文）
+
+### 3. Granite 4.0 Nano: Just how small can you go?Byibm-graniteand 1 other•6 days ago•96
+链接: https://huggingface.co/blog/ibm-granite/granite-4-nano
+摘要: Today we are excited to share Granite 4.0 Nano , our smallest models yet, released as part of IBM's Granite 4.0 model family.  Designed for the edge and on-device applications, these models demonstrate excellent performance for their size and represent IBM's continued commitment to develop powerful, useful, models that don't require hundreds of billions of parameters to get the job done.
+Like all Granite 4.0 models , the Nano models are released under an Apache 2.0 license with native architecture support on popular runtimes like vLLM, llama.cpp, and MLX. The models were trained with the same improved training methodologies, pipelines, and over 15T tokens of training data developed for the original Granite 4.0 models. This release includes variants benefiting from the Granite 4.0’s new, efficient hybrid architecture , and like all Granite language models, the Granite 4.0 Nano models also carry with them IBM's ISO 42001 certification for responsible model development, giving users added confidence that models are built and governed to global standards.
+
+### 4. Why Did MiniMax M2 End Up as a Full Attention Model?ByMiniMax-AI•4 days ago•37
+链接: https://huggingface.co/blog/MiniMax-AI/why-did-m2-end-up-as-a-full-attention-model
+摘要: After M2 release, we’ve been receiving many queries from the community on “Why did you turn back the clock and go with full attention with MiniMax M2?” We could give the textbook debate — spend an afternoon explaining why you should build linear or sparse attention, then another afternoon explaining why you shouldn’t. But at the end of the day, all that theory only goes so far. The real question is simple: should you actually do it?
+So, let's start with the conclusion: We are always working on it. But in a real-world, industrial-grade system, the truth is that efficient attention still has some way to go before it can definitively beat full attention. As LLMs have evolved, the entire stack has become monstrously complex. We serve more scenarios, and the architecture design trade-offs are exploding: "How does it perform on code and math? What about agent scenarios? How does it handle multimodality? Does long-chain CoT still hold up? Can RL scale on top of it? Are there hidden traps with low-precision compute? How do you implement interleaved thinking, caching, or speculative decoding? ... "
+
+### 5. The World’s First and Best Speed Painting SoftwareBywang12390•5 days ago•27
+链接: https://huggingface.co/blog/wang12390/speed-painting-software
+摘要: Introduction: A New Era of Digital Creativity What Is Miragic.AI? Why Miragic.AI Is the First of Its Kind 1. AI-Powered Real-Time Rendering 2. Adaptive Artistic Styles 3. Speed Without Complexity 4. Instant Color and Lighting Suggestions 5. Smart Background Generation How Miragic.AI Revolutionizes Speed Painting 1. Instant Brush-to-Scene Conversion 2. One-Stroke Realism 3. Smart Brush Caching 4. Real-Time Co-Creation 5. Seamless Cloud Collaboration Key Features That Make Miragic.AI Unbeatable Why Artists and Designers Love Miragic.AI 1. 10x Faster Workflows 2. Human + AI Harmony 3. Perfect for Professionals and Beginners 4. Limitless Creativity 5. Future-Proof Workflow The Vision Behind Miragic.AI For decades, artists have sought tools that bridge imagination and expression, making Speed Painting a reality with software like Miragic.
+For decades, artists have searched for tools that could bridge the gap between imagination and expression — software that not only keeps up with creativity but accelerates it. Traditional digital painting tools like Photoshop, Krita, and Procreate have transformed the way artists work, but they still rely heavily on manual effort, repetitive steps, and time-consuming layer management.

@@ -1,0 +1,14 @@
+Reinforcement learning (RL) is a paradigm where an agent learns optimal actions through interaction with an environment. 
+Each action results in a reward or penalty, guiding the agent to maximize cumulative rewards. 
+The process can be modeled as a Markov Decision Process (MDP) defined by states, actions, transitions, and rewards.
+
+Popular algorithms include:
+- **Q-Learning**: updates value estimates based on Bellman equations.
+- **SARSA**: similar to Q-learning but uses on-policy updates.
+- **Policy Gradient methods**: directly optimize policy parameters using gradient ascent.
+- **Deep Q-Networks (DQN)**: combine Q-learning with deep neural networks to handle large state spaces.
+
+强化学习通过“试错”让智能体学习最优策略。  
+智能体观察环境状态（state），选择动作（action），接收奖励（reward），并更新策略（policy）。  
+Q-learning 是最基础的算法，策略梯度用于连续动作空间，而深度 Q 网络（DQN）能结合神经网络表示复杂状态空间。  
+强化学习在游戏智能体（如 AlphaGo）、无人驾驶、机器人控制和推荐系统中都有实际应用。

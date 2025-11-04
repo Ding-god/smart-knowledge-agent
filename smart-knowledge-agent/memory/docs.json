@@ -1,0 +1,296 @@
+[
+  {
+    "page_content": "📘 arXiv 最新 10 篇 AI/ML 论文 (2025-11-03)",
+    "metadata": {
+      "source": "./samples\\2025-11-03_arxiv_ai_trends.txt"
+    }
+  },
+  {
+    "page_content": "### Continuous Autoregressive Language Models\n链接: http://arxiv.org/abs/2510.27688v1\n摘要: The efficiency of large language models (LLMs) is fundamentally limited by\ntheir sequential, token-by-token generation process. We argue that overcoming\nthis bottleneck requires a new design axis for LLM scaling: increasing the\nsemantic bandwidth of each generative step. To this end, we introduce\nContinuous Autoregressive Language Models (CALM), a paradigm shift from\ndiscrete next-token prediction to continuous next-vector prediction. CALM uses\na high-fidelity autoencoder to compress a chunk of K tokens into a single\ncontinuous vector, from which the original tokens can be reconstructed with\nover 99.9\\% accuracy. This allows us to model language as a sequence of",
+    "metadata": {
+      "source": "./samples\\2025-11-03_arxiv_ai_trends.txt"
+    }
+  },
+  {
+    "page_content": "over 99.9\\% accuracy. This allows us to model language as a sequence of\ncontinuous vectors instead of discrete tokens, which reduces the number of\ngenerative steps by a factor of K. The paradigm shift necessitates a new\nmodeling toolkit; therefore, we develop a comprehensive likelihood-free\nframework that enables robust training, evaluation, and controllable sampling\nin the continuous domain. Experiments show that CALM significantly improves the\nperformance-compute trade-off, achieving the performance of strong discrete\nbaselines at a significantly lower computational cost. More importantly, these\nfindings establish next-vector prediction as a powerful and scalable pathway\ntowards ultra-efficient language models. Code:\nhttps://github.com/shaochenze/calm. Project:",
+    "metadata": {
+      "source": "./samples\\2025-11-03_arxiv_ai_trends.txt"
+    }
+  },
+  {
+    "page_content": "towards ultra-efficient language models. Code:\nhttps://github.com/shaochenze/calm. Project:\nhttps://shaochenze.github.io/blog/2025/CALM.",
+    "metadata": {
+      "source": "./samples\\2025-11-03_arxiv_ai_trends.txt"
+    }
+  },
+  {
+    "page_content": "### PETAR: Localized Findings Generation with Mask-Aware Vision-Language\n  Modeling for PET Automated Reporting\n链接: http://arxiv.org/abs/2510.27680v1\n摘要: Recent advances in vision-language models (VLMs) have enabled impressive\nmultimodal reasoning, yet most medical applications remain limited to 2D\nimaging. In this work, we extend VLMs to 3D positron emission tomography and\ncomputed tomography (PET/CT), a domain characterized by large volumetric data,\nsmall and dispersed lesions, and lengthy radiology reports. We introduce a\nlarge-scale dataset comprising over 11,000 lesion-level descriptions paired\nwith 3D segmentations from more than 5,000 PET/CT exams, extracted via a hybrid\nrule-based and large language model (LLM) pipeline. Building upon this dataset,",
+    "metadata": {
+      "source": "./samples\\2025-11-03_arxiv_ai_trends.txt"
+    }
+  },
+  {
+    "page_content": "rule-based and large language model (LLM) pipeline. Building upon this dataset,\nwe propose PETAR-4B, a 3D mask-aware vision-language model that integrates PET,\nCT, and lesion contours for spatially grounded report generation. PETAR bridges\nglobal contextual reasoning with fine-grained lesion awareness, producing\nclinically coherent and localized findings. Comprehensive automated and human\nevaluations demonstrate that PETAR substantially improves PET/CT report\ngeneration quality, advancing 3D medical vision-language understanding.",
+    "metadata": {
+      "source": "./samples\\2025-11-03_arxiv_ai_trends.txt"
+    }
+  },
+  {
+    "page_content": "### Dark-Field X-Ray Imaging Significantly Improves Deep-Learning based\n  Detection of Synthetic Early-Stage Lung Tumors in Preclinical Models\n链接: http://arxiv.org/abs/2510.27679v1\n摘要: Low-dose computed tomography (LDCT) is the current standard for lung cancer\nscreening, yet its adoption and accessibility remain limited. Many regions lack\nLDCT infrastructure, and even among those screened, early-stage cancer\ndetection often yield false positives, as shown in the National Lung Screening\nTrial (NLST) with a sensitivity of 93.8 percent and a false-positive rate of\n26.6 percent. We aim to investigate whether X-ray dark-field imaging (DFI)\nradiograph, a technique sensitive to small-angle scatter from alveolar\nmicrostructure and less susceptible to organ shadowing, can significantly",
+    "metadata": {
+      "source": "./samples\\2025-11-03_arxiv_ai_trends.txt"
+    }
+  },
+  {
+    "page_content": "microstructure and less susceptible to organ shadowing, can significantly\nimprove early-stage lung tumor detection when coupled with deep-learning\nsegmentation. Using paired attenuation (ATTN) and DFI radiograph images of\neuthanized mouse lungs, we generated realistic synthetic tumors with irregular\nboundaries and intensity profiles consistent with physical lung contrast. A\nU-Net segmentation network was trained on small patches using either ATTN, DFI,\nor a combination of ATTN and DFI channels.Results show that the DFI-only model\nachieved a true-positive detection rate of 83.7 percent, compared with 51\npercent for ATTN-only, while maintaining comparable specificity (90.5 versus\n92.9 percent). The combined ATTN and DFI input achieved 79.6 percent",
+    "metadata": {
+      "source": "./samples\\2025-11-03_arxiv_ai_trends.txt"
+    }
+  },
+  {
+    "page_content": "92.9 percent). The combined ATTN and DFI input achieved 79.6 percent\nsensitivity and 97.6 percent specificity. In conclusion, DFI substantially\nimproves early-tumor detectability in comparison to standard attenuation\nradiography and shows potential as an accessible, low-cost, low-dose\nalternative for pre-clinical or limited-resource screening where LDCT is\nunavailable.",
+    "metadata": {
+      "source": "./samples\\2025-11-03_arxiv_ai_trends.txt"
+    }
+  },
+  {
+    "page_content": "### On Selecting Few-Shot Examples for LLM-based Code Vulnerability\n  Detection\n链接: http://arxiv.org/abs/2510.27675v1\n摘要: Large language models (LLMs) have demonstrated impressive capabilities for\nmany coding tasks, including summarization, translation, completion, and code\ngeneration. However, detecting code vulnerabilities remains a challenging task\nfor LLMs. An effective way to improve LLM performance is in-context learning\n(ICL) - providing few-shot examples similar to the query, along with correct\nanswers, can improve an LLM's ability to generate correct solutions. However,\nchoosing the few-shot examples appropriately is crucial to improving model\nperformance. In this paper, we explore two criteria for choosing few-shot",
+    "metadata": {
+      "source": "./samples\\2025-11-03_arxiv_ai_trends.txt"
+    }
+  },
+  {
+    "page_content": "performance. In this paper, we explore two criteria for choosing few-shot\nexamples for ICL used in the code vulnerability detection task. The first\ncriterion considers if the LLM (consistently) makes a mistake or not on a\nsample with the intuition that LLM performance on a sample is informative about\nits usefulness as a few-shot example. The other criterion considers similarity\nof the examples with the program under query and chooses few-shot examples\nbased on the $k$-nearest neighbors to the given sample. We perform evaluations\nto determine the benefits of these criteria individually as well as under\nvarious combinations, using open-source models on multiple datasets.",
+    "metadata": {
+      "source": "./samples\\2025-11-03_arxiv_ai_trends.txt"
+    }
+  },
+  {
+    "page_content": "### Culture Cartography: Mapping the Landscape of Cultural Knowledge\n链接: http://arxiv.org/abs/2510.27672v1\n摘要: To serve global users safely and productively, LLMs need culture-specific\nknowledge that might not be learned during pre-training. How do we find such\nknowledge that is (1) salient to in-group users, but (2) unknown to LLMs? The\nmost common solutions are single-initiative: either researchers define\nchallenging questions that users passively answer (traditional annotation), or\nusers actively produce data that researchers structure as benchmarks (knowledge\nextraction). The process would benefit from mixed-initiative collaboration,\nwhere users guide the process to meaningfully reflect their cultures, and LLMs",
+    "metadata": {
+      "source": "./samples\\2025-11-03_arxiv_ai_trends.txt"
+    }
+  },
+  {
+    "page_content": "where users guide the process to meaningfully reflect their cultures, and LLMs\nsteer the process towards more challenging questions that meet the researcher's\ngoals. We propose a mixed-initiative methodology called CultureCartography.\nHere, an LLM initializes annotation with questions for which it has\nlow-confidence answers, making explicit both its prior knowledge and the gaps\ntherein. This allows a human respondent to fill these gaps and steer the model\ntowards salient topics through direct edits. We implement this methodology as a\ntool called CultureExplorer. Compared to a baseline where humans answer\nLLM-proposed questions, we find that CultureExplorer more effectively produces\nknowledge that leading models like DeepSeek R1 and GPT-4o are missing, even",
+    "metadata": {
+      "source": "./samples\\2025-11-03_arxiv_ai_trends.txt"
+    }
+  },
+  {
+    "page_content": "knowledge that leading models like DeepSeek R1 and GPT-4o are missing, even\nwith web search. Fine-tuning on this data boosts the accuracy of Llama-3.1-8B\nby up to 19.2% on related culture benchmarks.",
+    "metadata": {
+      "source": "./samples\\2025-11-03_arxiv_ai_trends.txt"
+    }
+  },
+  {
+    "page_content": "### MolChord: Structure-Sequence Alignment for Protein-Guided Drug Design\n链接: http://arxiv.org/abs/2510.27671v1\n摘要: Structure-based drug design (SBDD), which maps target proteins to candidate\nmolecular ligands, is a fundamental task in drug discovery. Effectively\naligning protein structural representations with molecular representations, and\nensuring alignment between generated drugs and their pharmacological\nproperties, remains a critical challenge. To address these challenges, we\npropose MolChord, which integrates two key techniques: (1) to align protein and\nmolecule structures with their textual descriptions and sequential\nrepresentations (e.g., FASTA for proteins and SMILES for molecules), we\nleverage NatureLM, an autoregressive model unifying text, small molecules, and",
+    "metadata": {
+      "source": "./samples\\2025-11-03_arxiv_ai_trends.txt"
+    }
+  },
+  {
+    "page_content": "leverage NatureLM, an autoregressive model unifying text, small molecules, and\nproteins, as the molecule generator, alongside a diffusion-based structure\nencoder; and (2) to guide molecules toward desired properties, we curate a\nproperty-aware dataset by integrating preference data and refine the alignment\nprocess using Direct Preference Optimization (DPO). Experimental results on\nCrossDocked2020 demonstrate that our approach achieves state-of-the-art\nperformance on key evaluation metrics, highlighting its potential as a\npractical tool for SBDD.",
+    "metadata": {
+      "source": "./samples\\2025-11-03_arxiv_ai_trends.txt"
+    }
+  },
+  {
+    "page_content": "### Bayesian model selection and misspecification testing in imaging inverse\n  problems only from noisy and partial measurements\n链接: http://arxiv.org/abs/2510.27663v1\n摘要: Modern imaging techniques heavily rely on Bayesian statistical models to\naddress difficult image reconstruction and restoration tasks. This paper\naddresses the objective evaluation of such models in settings where ground\ntruth is unavailable, with a focus on model selection and misspecification\ndiagnosis. Existing unsupervised model evaluation methods are often unsuitable\nfor computational imaging due to their high computational cost and\nincompatibility with modern image priors defined implicitly via machine\nlearning models. We herein propose a general methodology for unsupervised model",
+    "metadata": {
+      "source": "./samples\\2025-11-03_arxiv_ai_trends.txt"
+    }
+  },
+  {
+    "page_content": "learning models. We herein propose a general methodology for unsupervised model\nselection and misspecification detection in Bayesian imaging sciences, based on\na novel combination of Bayesian cross-validation and data fission, a randomized\nmeasurement splitting technique. The approach is compatible with any Bayesian\nimaging sampler, including diffusion and plug-and-play samplers. We demonstrate\nthe methodology through experiments involving various scoring rules and types\nof model misspecification, where we achieve excellent selection and detection\naccuracy with a low computational cost.",
+    "metadata": {
+      "source": "./samples\\2025-11-03_arxiv_ai_trends.txt"
+    }
+  },
+  {
+    "page_content": "### Challenges in Credit Assignment for Multi-Agent Reinforcement Learning\n  in Open Agent Systems\n链接: http://arxiv.org/abs/2510.27659v1\n摘要: In the rapidly evolving field of multi-agent reinforcement learning (MARL),\nunderstanding the dynamics of open systems is crucial. Openness in MARL refers\nto the dynam-ic nature of agent populations, tasks, and agent types with-in a\nsystem. Specifically, there are three types of openness as reported in (Eck et\nal. 2023) [2]: agent openness, where agents can enter or leave the system at\nany time; task openness, where new tasks emerge, and existing ones evolve or\ndisappear; and type openness, where the capabil-ities and behaviors of agents\nchange over time. This report provides a conceptual and empirical review,",
+    "metadata": {
+      "source": "./samples\\2025-11-03_arxiv_ai_trends.txt"
+    }
+  },
+  {
+    "page_content": "change over time. This report provides a conceptual and empirical review,\nfocusing on the interplay between openness and the credit assignment problem\n(CAP). CAP involves determining the contribution of individual agents to the\noverall system performance, a task that becomes increasingly complex in open\nenviron-ments. Traditional credit assignment (CA) methods often assume static\nagent populations, fixed and pre-defined tasks, and stationary types, making\nthem inadequate for open systems. We first conduct a conceptual analysis,\nin-troducing new sub-categories of openness to detail how events like agent\nturnover or task cancellation break the assumptions of environmental\nstationarity and fixed team composition that underpin existing CAP methods. We",
+    "metadata": {
+      "source": "./samples\\2025-11-03_arxiv_ai_trends.txt"
+    }
+  },
+  {
+    "page_content": "stationarity and fixed team composition that underpin existing CAP methods. We\nthen present an empirical study using representative temporal and structural\nalgorithms in an open environment. The results demonstrate that openness\ndirectly causes credit misattribution, evidenced by unstable loss functions and\nsignificant performance degradation.",
+    "metadata": {
+      "source": "./samples\\2025-11-03_arxiv_ai_trends.txt"
+    }
+  },
+  {
+    "page_content": "### Community Detection on Model Explanation Graphs for Explainable AI\n链接: http://arxiv.org/abs/2510.27655v1\n摘要: Feature-attribution methods (e.g., SHAP, LIME) explain individual predictions\nbut often miss higher-order structure: sets of features that act in concert. We\npropose Modules of Influence (MoI), a framework that (i) constructs a model\nexplanation graph from per-instance attributions, (ii) applies community\ndetection to find feature modules that jointly affect predictions, and (iii)\nquantifies how these modules relate to bias, redundancy, and causality\npatterns. Across synthetic and real datasets, MoI uncovers correlated feature\ngroups, improves model debugging via module-level ablations, and localizes bias",
+    "metadata": {
+      "source": "./samples\\2025-11-03_arxiv_ai_trends.txt"
+    }
+  },
+  {
+    "page_content": "groups, improves model debugging via module-level ablations, and localizes bias\nexposure to specific modules. We release stability and synergy metrics, a\nreference implementation, and evaluation protocols to benchmark module\ndiscovery in XAI.",
+    "metadata": {
+      "source": "./samples\\2025-11-03_arxiv_ai_trends.txt"
+    }
+  },
+  {
+    "page_content": "### Information-Theoretic Greedy Layer-wise Training for Traffic Sign\n  Recognition\n链接: http://arxiv.org/abs/2510.27651v1\n摘要: Modern deep neural networks (DNNs) are typically trained with a global\ncross-entropy loss in a supervised end-to-end manner: neurons need to store\ntheir outgoing weights; training alternates between a forward pass\n(computation) and a top-down backward pass (learning) which is biologically\nimplausible. Alternatively, greedy layer-wise training eliminates the need for\ncross-entropy loss and backpropagation. By avoiding the computation of\nintermediate gradients and the storage of intermediate outputs, it reduces\nmemory usage and helps mitigate issues such as vanishing or exploding\ngradients. However, most existing layer-wise training approaches have been",
+    "metadata": {
+      "source": "./samples\\2025-11-03_arxiv_ai_trends.txt"
+    }
+  },
+  {
+    "page_content": "gradients. However, most existing layer-wise training approaches have been\nevaluated only on relatively small datasets with simple deep architectures. In\nthis paper, we first systematically analyze the training dynamics of popular\nconvolutional neural networks (CNNs) trained by stochastic gradient descent\n(SGD) through an information-theoretic lens. Our findings reveal that networks\nconverge layer-by-layer from bottom to top and that the flow of information\nadheres to a Markov information bottleneck principle. Building on these\nobservations, we propose a novel layer-wise training approach based on the\nrecently developed deterministic information bottleneck (DIB) and the\nmatrix-based R\\'enyi's $\\alpha$-order entropy functional. Specifically, each",
+    "metadata": {
+      "source": "./samples\\2025-11-03_arxiv_ai_trends.txt"
+    }
+  },
+  {
+    "page_content": "matrix-based R\\'enyi's $\\alpha$-order entropy functional. Specifically, each\nlayer is trained jointly with an auxiliary classifier that connects directly to\nthe output layer, enabling the learning of minimal sufficient task-relevant\nrepresentations. We empirically validate the effectiveness of our training\nprocedure on CIFAR-10 and CIFAR-100 using modern deep CNNs and further\ndemonstrate its applicability to a practical task involving traffic sign\nrecognition. Our approach not only outperforms existing layer-wise training\nbaselines but also achieves performance comparable to SGD.",
+    "metadata": {
+      "source": "./samples\\2025-11-03_arxiv_ai_trends.txt"
+    }
+  },
+  {
+    "page_content": "🟣 DeepMind Blog 最新 5 篇 (2025-11-03)\n\n### 1. Learn more\n链接: https://deepmind.google/discover/blog/\n摘要: Build with our next generation AI systems\nOur most intelligent AI models\n\n### 2. AlphaGenome\n链接: https://deepmind.google/discover/blog/alphagenome-ai-for-better-understanding-the-genome/\n摘要: Build with our next generation AI systems\nOur most intelligent AI models\n\n### 3. AlphaMissense\n链接: https://deepmind.google/discover/blog/a-catalogue-of-genetic-mutations-to-help-pinpoint-the-cause-of-diseases/\n摘要: Build with our next generation AI systems\nOur most intelligent AI models\n\n### 4. AlphaProteo\n链接: https://deepmind.google/discover/blog/alphaproteo-generates-novel-proteins-for-biology-and-health-research/\n摘要: Build with our next generation AI systems\nOur most intelligent AI models",
+    "metadata": {
+      "source": "./samples\\2025-11-03_deepmind_blog.txt"
+    }
+  },
+  {
+    "page_content": "### 5. AlphaEvolve\n链接: https://deepmind.google/discover/blog/alphaevolve-a-gemini-powered-coding-agent-for-designing-advanced-algorithms/\n摘要: Build with our next generation AI systems\nOur most intelligent AI models",
+    "metadata": {
+      "source": "./samples\\2025-11-03_deepmind_blog.txt"
+    }
+  },
+  {
+    "page_content": "🤗 Hugging Face Blog 最新 5 篇文章 (2025-11-03)\n\n### 1. NEW你也可以阅读这篇博客的中文版\n链接: https://huggingface.co/blog/zh\n摘要: 无摘要（请点击阅读全文）\n\n### 2. view all\n链接: https://huggingface.co/blog/community\n摘要: 无摘要（请点击阅读全文）",
+    "metadata": {
+      "source": "./samples\\2025-11-03_huggingface_blog.txt"
+    }
+  },
+  {
+    "page_content": "### 3. Granite 4.0 Nano: Just how small can you go?Byibm-graniteand 1 other•6 days ago•96\n链接: https://huggingface.co/blog/ibm-granite/granite-4-nano\n摘要: Today we are excited to share Granite 4.0 Nano , our smallest models yet, released as part of IBM's Granite 4.0 model family.  Designed for the edge and on-device applications, these models demonstrate excellent performance for their size and represent IBM's continued commitment to develop powerful, useful, models that don't require hundreds of billions of parameters to get the job done.",
+    "metadata": {
+      "source": "./samples\\2025-11-03_huggingface_blog.txt"
+    }
+  },
+  {
+    "page_content": "Like all Granite 4.0 models , the Nano models are released under an Apache 2.0 license with native architecture support on popular runtimes like vLLM, llama.cpp, and MLX. The models were trained with the same improved training methodologies, pipelines, and over 15T tokens of training data developed for the original Granite 4.0 models. This release includes variants benefiting from the Granite 4.0’s new, efficient hybrid architecture , and like all Granite language models, the Granite 4.0 Nano models also carry with them IBM's ISO 42001 certification for responsible model development, giving users added confidence that models are built and governed to global standards.",
+    "metadata": {
+      "source": "./samples\\2025-11-03_huggingface_blog.txt"
+    }
+  },
+  {
+    "page_content": "### 4. Why Did MiniMax M2 End Up as a Full Attention Model?ByMiniMax-AI•4 days ago•37\n链接: https://huggingface.co/blog/MiniMax-AI/why-did-m2-end-up-as-a-full-attention-model\n摘要: After M2 release, we’ve been receiving many queries from the community on “Why did you turn back the clock and go with full attention with MiniMax M2?” We could give the textbook debate — spend an afternoon explaining why you should build linear or sparse attention, then another afternoon explaining why you shouldn’t. But at the end of the day, all that theory only goes so far. The real question is simple: should you actually do it?",
+    "metadata": {
+      "source": "./samples\\2025-11-03_huggingface_blog.txt"
+    }
+  },
+  {
+    "page_content": "So, let's start with the conclusion: We are always working on it. But in a real-world, industrial-grade system, the truth is that efficient attention still has some way to go before it can definitively beat full attention. As LLMs have evolved, the entire stack has become monstrously complex. We serve more scenarios, and the architecture design trade-offs are exploding: \"How does it perform on code and math? What about agent scenarios? How does it handle multimodality? Does long-chain CoT still hold up? Can RL scale on top of it? Are there hidden traps with low-precision compute? How do you implement interleaved thinking, caching, or speculative decoding? ... \"",
+    "metadata": {
+      "source": "./samples\\2025-11-03_huggingface_blog.txt"
+    }
+  },
+  {
+    "page_content": "### 5. The World’s First and Best Speed Painting SoftwareBywang12390•5 days ago•27\n链接: https://huggingface.co/blog/wang12390/speed-painting-software",
+    "metadata": {
+      "source": "./samples\\2025-11-03_huggingface_blog.txt"
+    }
+  },
+  {
+    "page_content": "摘要: Introduction: A New Era of Digital Creativity What Is Miragic.AI? Why Miragic.AI Is the First of Its Kind 1. AI-Powered Real-Time Rendering 2. Adaptive Artistic Styles 3. Speed Without Complexity 4. Instant Color and Lighting Suggestions 5. Smart Background Generation How Miragic.AI Revolutionizes Speed Painting 1. Instant Brush-to-Scene Conversion 2. One-Stroke Realism 3. Smart Brush Caching 4. Real-Time Co-Creation 5. Seamless Cloud Collaboration Key Features That Make Miragic.AI Unbeatable Why Artists and Designers Love Miragic.AI 1. 10x Faster Workflows 2. Human + AI Harmony 3. Perfect for Professionals and Beginners 4. Limitless Creativity 5",
+    "metadata": {
+      "source": "./samples\\2025-11-03_huggingface_blog.txt"
+    }
+  },
+  {
+    "page_content": ". 10x Faster Workflows 2. Human + AI Harmony 3. Perfect for Professionals and Beginners 4. Limitless Creativity 5. Future-Proof Workflow The Vision Behind Miragic.AI For decades, artists have sought tools that bridge imagination and expression, making Speed Painting a reality with software like Miragic.",
+    "metadata": {
+      "source": "./samples\\2025-11-03_huggingface_blog.txt"
+    }
+  },
+  {
+    "page_content": "For decades, artists have searched for tools that could bridge the gap between imagination and expression — software that not only keeps up with creativity but accelerates it. Traditional digital painting tools like Photoshop, Krita, and Procreate have transformed the way artists work, but they still rely heavily on manual effort, repetitive steps, and time-consuming layer management.",
+    "metadata": {
+      "source": "./samples\\2025-11-03_huggingface_blog.txt"
+    }
+  },
+  {
+    "page_content": "🧠 Meta AI Blog 最新 5 篇（占位数据，因为 https://ai.meta.com/blog/ 返回 403）\n\n这个站点当前不能用 requests 直接抓，我们先把官方博客入口写进去，\n等能访问时再更新为真实内容。\n\n### 1. The Latest\n链接: https://ai.meta.com/blog/\n摘要: 当前无法获取摘要（403），请手动打开链接查看原文。\n\n### 2. LLaMA 系列模型更新\n链接: https://ai.meta.com/blog/\n摘要: 当前无法获取摘要（403），请手动打开链接查看原文。\n\n### 3. Segment Anything / SAM 相关进展\n链接: https://ai.meta.com/blog/\n摘要: 当前无法获取摘要（403），请手动打开链接查看原文。\n\n### 4. Multimodal / embodied AI 研究\n链接: https://ai.meta.com/blog/\n摘要: 当前无法获取摘要（403），请手动打开链接查看原文。\n\n### 5. Meta GenAI 产品与研究路线\n链接: https://ai.meta.com/blog/\n摘要: 当前无法获取摘要（403），请手动打开链接查看原文。",
+    "metadata": {
+      "source": "./samples\\2025-11-03_meta_ai_blog.txt"
+    }
+  },
+  {
+    "page_content": "📄 Papers with Code 最新论文（2025-11-03）\n\n抓取失败，请稍后重试。",
+    "metadata": {
+      "source": "./samples\\2025-11-03_paperswithcode.txt"
+    }
+  },
+  {
+    "page_content": "Artificial intelligence (AI) has become an enabling technology across multiple industries. \nIn healthcare, AI assists in disease diagnosis, drug discovery, and personalized treatment. \nIn finance, it is used for fraud detection, algorithmic trading, and risk modeling. \nIn transportation, AI powers autonomous vehicles, route optimization, and predictive maintenance. \nIn manufacturing, AI improves quality inspection and process automation.\n\n人工智能技术在现实中已无处不在：  \n医疗领域使用深度学习进行影像识别与辅助诊断；  \n金融领域利用模型评估风险与防止欺诈；  \n交通与工业领域用强化学习优化调度与能耗。  \n随着算力提升与数据积累，AI 的趋势正从单一任务模型转向多模态、通用智能系统。",
+    "metadata": {
+      "source": "./samples\\ai_applications.txt"
+    }
+  },
+  {
+    "page_content": "Computer vision is the field of AI that enables machines to interpret and understand visual information. \nIt includes tasks like image classification, object detection, semantic segmentation, and optical flow estimation.\n\nCore techniques rely on convolutional neural networks (CNNs). Notable architectures:\n- LeNet (1998): the first CNN used for digit recognition.\n- AlexNet (2012): revolutionized deep learning with ReLU and GPU training.\n- ResNet (2015): introduced residual connections for very deep networks.\n- YOLO (2016–): enables real-time object detection.\n\n计算机视觉技术的目标是让机器能够“看懂”世界。  \n常见任务包括目标识别、图像分割、姿态估计、三维重建等。  \n从早期的卷积神经网络到近年的 Vision Transformer（ViT），算法的核心思路是通过层级特征提取实现高维理解。  \n在工业质检、自动驾驶、安防监控与机器人导航中都有成熟应用。",
+    "metadata": {
+      "source": "./samples\\computer_vision.txt"
+    }
+  },
+  {
+    "page_content": "This document introduces the concept of Retrieval-Augmented Generation (RAG).\nRAG combines a vector-based retriever and a large language model.\nIt is commonly used to build knowledge-grounded question answering systems.",
+    "metadata": {
+      "source": "./samples\\example.txt"
+    }
+  },
+  {
+    "page_content": "Machine learning is a subfield of artificial intelligence focused on enabling computers to learn patterns from data and make predictions without explicit programming. \nIt encompasses supervised learning, unsupervised learning, semi-supervised learning, and reinforcement learning. \n\nSupervised learning uses labeled datasets to train models. Common algorithms include:\n- Linear Regression for continuous outcomes.\n- Logistic Regression for binary classification.\n- Decision Trees and Random Forests for complex feature relationships.\n- Support Vector Machines (SVM) for high-dimensional data.\n\nUnsupervised learning deals with unlabeled data, identifying hidden structures through clustering (KMeans, GMM) or dimensionality reduction (PCA, t-SNE).",
+    "metadata": {
+      "source": "./samples\\machine_learning.txt"
+    }
+  },
+  {
+    "page_content": "Machine learning models often require preprocessing steps such as normalization, feature scaling, and encoding. \nModel performance is evaluated using metrics like accuracy, precision, recall, and F1-score, often visualized through confusion matrices.\n\n机器学习是人工智能的核心技术之一，它让计算机能够“从数据中学习”。  \n监督学习依靠带标签的数据进行训练，无监督学习则自动发现数据结构。  \n半监督与强化学习介于两者之间，更适用于复杂环境。  \n常见算法包括线性回归、逻辑回归、KNN、支持向量机、随机森林等。  \n模型性能可通过精确率、召回率、F1 值和 ROC 曲线综合评估。  \n在工程应用中，机器学习已被广泛用于图像识别、自然语言处理、预测分析与自动控制等领域。",
+    "metadata": {
+      "source": "./samples\\machine_learning.txt"
+    }
+  },
+  {
+    "page_content": "Retrieval-Augmented Generation (RAG) is a framework that combines information retrieval and text generation. \nInstead of relying only on pre-trained model knowledge, RAG retrieves relevant documents from an external database, \nthen uses a language model to synthesize an answer. \nThis method improves factual accuracy and reduces hallucinations in large language models. \nRAG is widely used in question answering, enterprise search, and document summarization systems.",
+    "metadata": {
+      "source": "./samples\\rag_basis.txt"
+    }
+  },
+  {
+    "page_content": "RAG consists of two major components: a retriever and a generator. \nThe retriever is responsible for finding relevant text chunks based on vector similarity, usually through embeddings like OpenAI’s `text-embedding-3-small` or Sentence-BERT. \nThe generator, typically a large language model such as GPT, takes both the user query and retrieved context as input to produce a coherent answer.\n\nCommon retrieval strategies include dense retrieval (vector search), BM25 keyword retrieval, and hybrid methods combining both. \nRAG also benefits from chunking strategies—splitting large documents into semantically meaningful paragraphs to ensure efficient search and reduced noise.",
+    "metadata": {
+      "source": "./samples\\rag_basis.txt"
+    }
+  },
+  {
+    "page_content": "检索增强生成（RAG）是一种结合“检索系统”和“生成式模型”的方法。它先根据用户的问题在外部文档库中检索最相关的文本，再将这些文本与问题一起输入大语言模型，从而生成更有依据的答案。  \n这种机制能有效减少大模型的“幻觉”问题，让回答更可信。RAG 常被用于智能问答、内部知识库、企业客服与法律检索场景。  \n在实际部署中，RAG 系统通常包含三步：向量化（embedding）、检索（retrieval）、生成（generation）。每个环节都可以单独优化，例如改进分词方式或调整相似度阈值来提升检索精度。",
+    "metadata": {
+      "source": "./samples\\rag_basis.txt"
+    }
+  },
+  {
+    "page_content": "Reinforcement learning (RL) is a paradigm where an agent learns optimal actions through interaction with an environment. \nEach action results in a reward or penalty, guiding the agent to maximize cumulative rewards. \nThe process can be modeled as a Markov Decision Process (MDP) defined by states, actions, transitions, and rewards.\n\nPopular algorithms include:\n- **Q-Learning**: updates value estimates based on Bellman equations.\n- **SARSA**: similar to Q-learning but uses on-policy updates.\n- **Policy Gradient methods**: directly optimize policy parameters using gradient ascent.\n- **Deep Q-Networks (DQN)**: combine Q-learning with deep neural networks to handle large state spaces.",
+    "metadata": {
+      "source": "./samples\\reinforcement_learning.txt"
+    }
+  },
+  {
+    "page_content": "强化学习通过“试错”让智能体学习最优策略。  \n智能体观察环境状态（state），选择动作（action），接收奖励（reward），并更新策略（policy）。  \nQ-learning 是最基础的算法，策略梯度用于连续动作空间，而深度 Q 网络（DQN）能结合神经网络表示复杂状态空间。  \n强化学习在游戏智能体（如 AlphaGo）、无人驾驶、机器人控制和推荐系统中都有实际应用。",
+    "metadata": {
+      "source": "./samples\\reinforcement_learning.txt"
+    }
+  }
+]

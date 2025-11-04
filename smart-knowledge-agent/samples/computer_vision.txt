@@ -1,0 +1,13 @@
+Computer vision is the field of AI that enables machines to interpret and understand visual information. 
+It includes tasks like image classification, object detection, semantic segmentation, and optical flow estimation.
+
+Core techniques rely on convolutional neural networks (CNNs). Notable architectures:
+- LeNet (1998): the first CNN used for digit recognition.
+- AlexNet (2012): revolutionized deep learning with ReLU and GPU training.
+- ResNet (2015): introduced residual connections for very deep networks.
+- YOLO (2016–): enables real-time object detection.
+
+计算机视觉技术的目标是让机器能够“看懂”世界。  
+常见任务包括目标识别、图像分割、姿态估计、三维重建等。  
+从早期的卷积神经网络到近年的 Vision Transformer（ViT），算法的核心思路是通过层级特征提取实现高维理解。  
+在工业质检、自动驾驶、安防监控与机器人导航中都有成熟应用。

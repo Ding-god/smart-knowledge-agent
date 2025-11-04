@@ -1,0 +1,16 @@
+Retrieval-Augmented Generation (RAG) is a framework that combines information retrieval and text generation. 
+Instead of relying only on pre-trained model knowledge, RAG retrieves relevant documents from an external database, 
+then uses a language model to synthesize an answer. 
+This method improves factual accuracy and reduces hallucinations in large language models. 
+RAG is widely used in question answering, enterprise search, and document summarization systems.
+
+RAG consists of two major components: a retriever and a generator. 
+The retriever is responsible for finding relevant text chunks based on vector similarity, usually through embeddings like OpenAI’s `text-embedding-3-small` or Sentence-BERT. 
+The generator, typically a large language model such as GPT, takes both the user query and retrieved context as input to produce a coherent answer.
+
+Common retrieval strategies include dense retrieval (vector search), BM25 keyword retrieval, and hybrid methods combining both. 
+RAG also benefits from chunking strategies—splitting large documents into semantically meaningful paragraphs to ensure efficient search and reduced noise.
+
+检索增强生成（RAG）是一种结合“检索系统”和“生成式模型”的方法。它先根据用户的问题在外部文档库中检索最相关的文本，再将这些文本与问题一起输入大语言模型，从而生成更有依据的答案。  
+这种机制能有效减少大模型的“幻觉”问题，让回答更可信。RAG 常被用于智能问答、内部知识库、企业客服与法律检索场景。  
+在实际部署中，RAG 系统通常包含三步：向量化（embedding）、检索（retrieval）、生成（generation）。每个环节都可以单独优化，例如改进分词方式或调整相似度阈值来提升检索精度。

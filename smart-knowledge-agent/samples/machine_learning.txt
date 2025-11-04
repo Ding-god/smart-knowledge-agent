@@ -1,0 +1,20 @@
+Machine learning is a subfield of artificial intelligence focused on enabling computers to learn patterns from data and make predictions without explicit programming. 
+It encompasses supervised learning, unsupervised learning, semi-supervised learning, and reinforcement learning. 
+
+Supervised learning uses labeled datasets to train models. Common algorithms include:
+- Linear Regression for continuous outcomes.
+- Logistic Regression for binary classification.
+- Decision Trees and Random Forests for complex feature relationships.
+- Support Vector Machines (SVM) for high-dimensional data.
+
+Unsupervised learning deals with unlabeled data, identifying hidden structures through clustering (KMeans, GMM) or dimensionality reduction (PCA, t-SNE).
+
+Machine learning models often require preprocessing steps such as normalization, feature scaling, and encoding. 
+Model performance is evaluated using metrics like accuracy, precision, recall, and F1-score, often visualized through confusion matrices.
+
+机器学习是人工智能的核心技术之一，它让计算机能够“从数据中学习”。  
+监督学习依靠带标签的数据进行训练，无监督学习则自动发现数据结构。  
+半监督与强化学习介于两者之间，更适用于复杂环境。  
+常见算法包括线性回归、逻辑回归、KNN、支持向量机、随机森林等。  
+模型性能可通过精确率、召回率、F1 值和 ROC 曲线综合评估。  
+在工程应用中，机器学习已被广泛用于图像识别、自然语言处理、预测分析与自动控制等领域。

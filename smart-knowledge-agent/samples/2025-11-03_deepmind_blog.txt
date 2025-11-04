@@ -1,0 +1,26 @@
+🟣 DeepMind Blog 最新 5 篇 (2025-11-03)
+
+### 1. Learn more
+链接: https://deepmind.google/discover/blog/
+摘要: Build with our next generation AI systems
+Our most intelligent AI models
+
+### 2. AlphaGenome
+链接: https://deepmind.google/discover/blog/alphagenome-ai-for-better-understanding-the-genome/
+摘要: Build with our next generation AI systems
+Our most intelligent AI models
+
+### 3. AlphaMissense
+链接: https://deepmind.google/discover/blog/a-catalogue-of-genetic-mutations-to-help-pinpoint-the-cause-of-diseases/
+摘要: Build with our next generation AI systems
+Our most intelligent AI models
+
+### 4. AlphaProteo
+链接: https://deepmind.google/discover/blog/alphaproteo-generates-novel-proteins-for-biology-and-health-research/
+摘要: Build with our next generation AI systems
+Our most intelligent AI models
+
+### 5. AlphaEvolve
+链接: https://deepmind.google/discover/blog/alphaevolve-a-gemini-powered-coding-agent-for-designing-advanced-algorithms/
+摘要: Build with our next generation AI systems
+Our most intelligent AI models

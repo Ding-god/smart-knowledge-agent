@@ -1,0 +1,216 @@
+📘 arXiv 最新 10 篇 AI/ML 论文 (2025-11-03)
+
+### Continuous Autoregressive Language Models
+链接: http://arxiv.org/abs/2510.27688v1
+摘要: The efficiency of large language models (LLMs) is fundamentally limited by
+their sequential, token-by-token generation process. We argue that overcoming
+this bottleneck requires a new design axis for LLM scaling: increasing the
+semantic bandwidth of each generative step. To this end, we introduce
+Continuous Autoregressive Language Models (CALM), a paradigm shift from
+discrete next-token prediction to continuous next-vector prediction. CALM uses
+a high-fidelity autoencoder to compress a chunk of K tokens into a single
+continuous vector, from which the original tokens can be reconstructed with
+over 99.9\% accuracy. This allows us to model language as a sequence of
+continuous vectors instead of discrete tokens, which reduces the number of
+generative steps by a factor of K. The paradigm shift necessitates a new
+modeling toolkit; therefore, we develop a comprehensive likelihood-free
+framework that enables robust training, evaluation, and controllable sampling
+in the continuous domain. Experiments show that CALM significantly improves the
+performance-compute trade-off, achieving the performance of strong discrete
+baselines at a significantly lower computational cost. More importantly, these
+findings establish next-vector prediction as a powerful and scalable pathway
+towards ultra-efficient language models. Code:
+https://github.com/shaochenze/calm. Project:
+https://shaochenze.github.io/blog/2025/CALM.
+
+### PETAR: Localized Findings Generation with Mask-Aware Vision-Language
+  Modeling for PET Automated Reporting
+链接: http://arxiv.org/abs/2510.27680v1
+摘要: Recent advances in vision-language models (VLMs) have enabled impressive
+multimodal reasoning, yet most medical applications remain limited to 2D
+imaging. In this work, we extend VLMs to 3D positron emission tomography and
+computed tomography (PET/CT), a domain characterized by large volumetric data,
+small and dispersed lesions, and lengthy radiology reports. We introduce a
+large-scale dataset comprising over 11,000 lesion-level descriptions paired
+with 3D segmentations from more than 5,000 PET/CT exams, extracted via a hybrid
+rule-based and large language model (LLM) pipeline. Building upon this dataset,
+we propose PETAR-4B, a 3D mask-aware vision-language model that integrates PET,
+CT, and lesion contours for spatially grounded report generation. PETAR bridges
+global contextual reasoning with fine-grained lesion awareness, producing
+clinically coherent and localized findings. Comprehensive automated and human
+evaluations demonstrate that PETAR substantially improves PET/CT report
+generation quality, advancing 3D medical vision-language understanding.
+
+### Dark-Field X-Ray Imaging Significantly Improves Deep-Learning based
+  Detection of Synthetic Early-Stage Lung Tumors in Preclinical Models
+链接: http://arxiv.org/abs/2510.27679v1
+摘要: Low-dose computed tomography (LDCT) is the current standard for lung cancer
+screening, yet its adoption and accessibility remain limited. Many regions lack
+LDCT infrastructure, and even among those screened, early-stage cancer
+detection often yield false positives, as shown in the National Lung Screening
+Trial (NLST) with a sensitivity of 93.8 percent and a false-positive rate of
+26.6 percent. We aim to investigate whether X-ray dark-field imaging (DFI)
+radiograph, a technique sensitive to small-angle scatter from alveolar
+microstructure and less susceptible to organ shadowing, can significantly
+improve early-stage lung tumor detection when coupled with deep-learning
+segmentation. Using paired attenuation (ATTN) and DFI radiograph images of
+euthanized mouse lungs, we generated realistic synthetic tumors with irregular
+boundaries and intensity profiles consistent with physical lung contrast. A
+U-Net segmentation network was trained on small patches using either ATTN, DFI,
+or a combination of ATTN and DFI channels.Results show that the DFI-only model
+achieved a true-positive detection rate of 83.7 percent, compared with 51
+percent for ATTN-only, while maintaining comparable specificity (90.5 versus
+92.9 percent). The combined ATTN and DFI input achieved 79.6 percent
+sensitivity and 97.6 percent specificity. In conclusion, DFI substantially
+improves early-tumor detectability in comparison to standard attenuation
+radiography and shows potential as an accessible, low-cost, low-dose
+alternative for pre-clinical or limited-resource screening where LDCT is
+unavailable.
+
+### On Selecting Few-Shot Examples for LLM-based Code Vulnerability
+  Detection
+链接: http://arxiv.org/abs/2510.27675v1
+摘要: Large language models (LLMs) have demonstrated impressive capabilities for
+many coding tasks, including summarization, translation, completion, and code
+generation. However, detecting code vulnerabilities remains a challenging task
+for LLMs. An effective way to improve LLM performance is in-context learning
+(ICL) - providing few-shot examples similar to the query, along with correct
+answers, can improve an LLM's ability to generate correct solutions. However,
+choosing the few-shot examples appropriately is crucial to improving model
+performance. In this paper, we explore two criteria for choosing few-shot
+examples for ICL used in the code vulnerability detection task. The first
+criterion considers if the LLM (consistently) makes a mistake or not on a
+sample with the intuition that LLM performance on a sample is informative about
+its usefulness as a few-shot example. The other criterion considers similarity
+of the examples with the program under query and chooses few-shot examples
+based on the $k$-nearest neighbors to the given sample. We perform evaluations
+to determine the benefits of these criteria individually as well as under
+various combinations, using open-source models on multiple datasets.
+
+### Culture Cartography: Mapping the Landscape of Cultural Knowledge
+链接: http://arxiv.org/abs/2510.27672v1
+摘要: To serve global users safely and productively, LLMs need culture-specific
+knowledge that might not be learned during pre-training. How do we find such
+knowledge that is (1) salient to in-group users, but (2) unknown to LLMs? The
+most common solutions are single-initiative: either researchers define
+challenging questions that users passively answer (traditional annotation), or
+users actively produce data that researchers structure as benchmarks (knowledge
+extraction). The process would benefit from mixed-initiative collaboration,
+where users guide the process to meaningfully reflect their cultures, and LLMs
+steer the process towards more challenging questions that meet the researcher's
+goals. We propose a mixed-initiative methodology called CultureCartography.
+Here, an LLM initializes annotation with questions for which it has
+low-confidence answers, making explicit both its prior knowledge and the gaps
+therein. This allows a human respondent to fill these gaps and steer the model
+towards salient topics through direct edits. We implement this methodology as a
+tool called CultureExplorer. Compared to a baseline where humans answer
+LLM-proposed questions, we find that CultureExplorer more effectively produces
+knowledge that leading models like DeepSeek R1 and GPT-4o are missing, even
+with web search. Fine-tuning on this data boosts the accuracy of Llama-3.1-8B
+by up to 19.2% on related culture benchmarks.
+
+### MolChord: Structure-Sequence Alignment for Protein-Guided Drug Design
+链接: http://arxiv.org/abs/2510.27671v1
+摘要: Structure-based drug design (SBDD), which maps target proteins to candidate
+molecular ligands, is a fundamental task in drug discovery. Effectively
+aligning protein structural representations with molecular representations, and
+ensuring alignment between generated drugs and their pharmacological
+properties, remains a critical challenge. To address these challenges, we
+propose MolChord, which integrates two key techniques: (1) to align protein and
+molecule structures with their textual descriptions and sequential
+representations (e.g., FASTA for proteins and SMILES for molecules), we
+leverage NatureLM, an autoregressive model unifying text, small molecules, and
+proteins, as the molecule generator, alongside a diffusion-based structure
+encoder; and (2) to guide molecules toward desired properties, we curate a
+property-aware dataset by integrating preference data and refine the alignment
+process using Direct Preference Optimization (DPO). Experimental results on
+CrossDocked2020 demonstrate that our approach achieves state-of-the-art
+performance on key evaluation metrics, highlighting its potential as a
+practical tool for SBDD.
+
+### Bayesian model selection and misspecification testing in imaging inverse
+  problems only from noisy and partial measurements
+链接: http://arxiv.org/abs/2510.27663v1
+摘要: Modern imaging techniques heavily rely on Bayesian statistical models to
+address difficult image reconstruction and restoration tasks. This paper
+addresses the objective evaluation of such models in settings where ground
+truth is unavailable, with a focus on model selection and misspecification
+diagnosis. Existing unsupervised model evaluation methods are often unsuitable
+for computational imaging due to their high computational cost and
+incompatibility with modern image priors defined implicitly via machine
+learning models. We herein propose a general methodology for unsupervised model
+selection and misspecification detection in Bayesian imaging sciences, based on
+a novel combination of Bayesian cross-validation and data fission, a randomized
+measurement splitting technique. The approach is compatible with any Bayesian
+imaging sampler, including diffusion and plug-and-play samplers. We demonstrate
+the methodology through experiments involving various scoring rules and types
+of model misspecification, where we achieve excellent selection and detection
+accuracy with a low computational cost.
+
+### Challenges in Credit Assignment for Multi-Agent Reinforcement Learning
+  in Open Agent Systems
+链接: http://arxiv.org/abs/2510.27659v1
+摘要: In the rapidly evolving field of multi-agent reinforcement learning (MARL),
+understanding the dynamics of open systems is crucial. Openness in MARL refers
+to the dynam-ic nature of agent populations, tasks, and agent types with-in a
+system. Specifically, there are three types of openness as reported in (Eck et
+al. 2023) [2]: agent openness, where agents can enter or leave the system at
+any time; task openness, where new tasks emerge, and existing ones evolve or
+disappear; and type openness, where the capabil-ities and behaviors of agents
+change over time. This report provides a conceptual and empirical review,
+focusing on the interplay between openness and the credit assignment problem
+(CAP). CAP involves determining the contribution of individual agents to the
+overall system performance, a task that becomes increasingly complex in open
+environ-ments. Traditional credit assignment (CA) methods often assume static
+agent populations, fixed and pre-defined tasks, and stationary types, making
+them inadequate for open systems. We first conduct a conceptual analysis,
+in-troducing new sub-categories of openness to detail how events like agent
+turnover or task cancellation break the assumptions of environmental
+stationarity and fixed team composition that underpin existing CAP methods. We
+then present an empirical study using representative temporal and structural
+algorithms in an open environment. The results demonstrate that openness
+directly causes credit misattribution, evidenced by unstable loss functions and
+significant performance degradation.
+
+### Community Detection on Model Explanation Graphs for Explainable AI
+链接: http://arxiv.org/abs/2510.27655v1
+摘要: Feature-attribution methods (e.g., SHAP, LIME) explain individual predictions
+but often miss higher-order structure: sets of features that act in concert. We
+propose Modules of Influence (MoI), a framework that (i) constructs a model
+explanation graph from per-instance attributions, (ii) applies community
+detection to find feature modules that jointly affect predictions, and (iii)
+quantifies how these modules relate to bias, redundancy, and causality
+patterns. Across synthetic and real datasets, MoI uncovers correlated feature
+groups, improves model debugging via module-level ablations, and localizes bias
+exposure to specific modules. We release stability and synergy metrics, a
+reference implementation, and evaluation protocols to benchmark module
+discovery in XAI.
+
+### Information-Theoretic Greedy Layer-wise Training for Traffic Sign
+  Recognition
+链接: http://arxiv.org/abs/2510.27651v1
+摘要: Modern deep neural networks (DNNs) are typically trained with a global
+cross-entropy loss in a supervised end-to-end manner: neurons need to store
+their outgoing weights; training alternates between a forward pass
+(computation) and a top-down backward pass (learning) which is biologically
+implausible. Alternatively, greedy layer-wise training eliminates the need for
+cross-entropy loss and backpropagation. By avoiding the computation of
+intermediate gradients and the storage of intermediate outputs, it reduces
+memory usage and helps mitigate issues such as vanishing or exploding
+gradients. However, most existing layer-wise training approaches have been
+evaluated only on relatively small datasets with simple deep architectures. In
+this paper, we first systematically analyze the training dynamics of popular
+convolutional neural networks (CNNs) trained by stochastic gradient descent
+(SGD) through an information-theoretic lens. Our findings reveal that networks
+converge layer-by-layer from bottom to top and that the flow of information
+adheres to a Markov information bottleneck principle. Building on these
+observations, we propose a novel layer-wise training approach based on the
+recently developed deterministic information bottleneck (DIB) and the
+matrix-based R\'enyi's $\alpha$-order entropy functional. Specifically, each
+layer is trained jointly with an auxiliary classifier that connects directly to
+the output layer, enabling the learning of minimal sufficient task-relevant
+representations. We empirically validate the effectiveness of our training
+procedure on CIFAR-10 and CIFAR-100 using modern deep CNNs and further
+demonstrate its applicability to a practical task involving traffic sign
+recognition. Our approach not only outperforms existing layer-wise training
+baselines but also achieves performance comparable to SGD.

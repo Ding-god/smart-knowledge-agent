@@ -1,0 +1,3 @@
+This document introduces the concept of Retrieval-Augmented Generation (RAG).
+RAG combines a vector-based retriever and a large language model.
+It is commonly used to build knowledge-grounded question answering systems.

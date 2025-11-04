@@ -1,0 +1,11 @@
+Artificial intelligence (AI) has become an enabling technology across multiple industries. 
+In healthcare, AI assists in disease diagnosis, drug discovery, and personalized treatment. 
+In finance, it is used for fraud detection, algorithmic trading, and risk modeling. 
+In transportation, AI powers autonomous vehicles, route optimization, and predictive maintenance. 
+In manufacturing, AI improves quality inspection and process automation.
+
+人工智能技术在现实中已无处不在：  
+医疗领域使用深度学习进行影像识别与辅助诊断；  
+金融领域利用模型评估风险与防止欺诈；  
+交通与工业领域用强化学习优化调度与能耗。  
+随着算力提升与数据积累，AI 的趋势正从单一任务模型转向多模态、通用智能系统。
